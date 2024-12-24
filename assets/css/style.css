@@ -1,14 +1,14 @@
 /***** Added Custom Font *****/
 @font-face {
   font-family: 'CustomFont';
-  src: url(/assets/fonts/TS\ Block\ Bold.ttf) format(truetype);
+  src: url(../fonts/TS\ Block\ Bold.ttf) format(truetype);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'poppins';
-  src: url(/assets/fonts/Poppins-Regular.ttf) format(truetype);
+  src: url(../fonts/Poppins-Regular.ttf) format(truetype);
   font-weight: normal;
   font-style: normal;
 }
