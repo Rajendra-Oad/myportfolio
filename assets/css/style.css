@@ -144,7 +144,7 @@ a {
 
 .header nav .nav_menu_sm i {
   background: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--white-color);
   padding: 3px;
   border-radius: 5px;
 }
