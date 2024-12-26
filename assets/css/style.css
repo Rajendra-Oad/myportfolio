@@ -550,7 +550,7 @@ footer .footer_center_content .footer_input_sub {
 
 footer .footer_center_content .footer_input_sub input {
   outline: none;
-  max-width: 2060px;
+  max-width: 200px;
   border: 1px solid var(--dark-muted-gary);
   padding: 10px 15px 10px 38px;
   border-radius: 50px;
@@ -585,10 +585,6 @@ footer .footer_links a {
 footer .footer_links a:hover {
   color: var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
-}
-
-@media (max-width:768px) {
-  
 }
 
 /***** End Footer *****/
