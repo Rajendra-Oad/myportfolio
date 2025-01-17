@@ -1,8 +1,7 @@
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('#main'),
-
-  smooth:true
-});
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector('#main'),
+//   smooth:true
+// });
 
 
 // toggle dark mode
@@ -17,12 +16,16 @@ darkToggle.addEventListener('click', () => {
 
 const enableDarkMode = () => {
   document.body.classList.add('dark_mode');
-  localStorage.setItem('dark_mode','active');
+  localStorage.setItem('dark_mode', 'active');
 }
 
-const disableDarkMode = () =>{
+const disableDarkMode = () => {
   document.body.classList.remove('dark_mode');
-  localStorage.setItem('dark_mode',null);
+  localStorage.setItem('dark_mode', null);
 }
 
 if (darkMode === 'active') enableDarkMode()
+
+
+Shery.mouseFollower();
+Shery.makeMagnet('.magnet');
