@@ -57,7 +57,7 @@ if (darkMode === 'active') enableDarkMode()
 //Shery Js and ThreeJs
 
 //Shery.mouseFollower();
-Shery.makeMagnet('.magnet');
+//Shery.makeMagnet('.magnet');
 
 Shery.textAnimate(".text-animate", {
   style: 1,
@@ -99,4 +99,6 @@ function isLaptop() {
 
  function executeLaptopFunction(){
    Shery.mouseFollower();
+   Shery.makeMagnet('.magnet');
+  
  }
