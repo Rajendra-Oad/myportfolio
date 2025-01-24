@@ -9,7 +9,6 @@ let menuBar = document.getElementById('menu');
 let navbar = document.querySelector('.header nav .nav_menu');
 let navbarColor =  document.querySelector('.header nav .nav_container');
 let navLinks = document.querySelectorAll('.nav_link');
-const body = document.body;
 let isNavbarOpen = false;
 
 
@@ -17,15 +16,7 @@ menuBar.addEventListener('click', () => {
   isNavbarOpen = !isNavbarOpen;
   navbar.classList.toggle('show');
   navbarColor.classList.toggle('toggle'); 
-
-  if(isNavbarOpen){
-    body.classList.add('no_scroll');
-    menuBar.innerHTML = `<i class="ri-close-line"></i>`
-  }else{
-
-  body.classList.remove('no_scroll')
-  menuBar.innerHTML = `<i class="ri-menu-line"></i>`;
-  }
+  menuBar.innerHTML = isNavbarOpen ? `<i class="ri-close-line"></i>` : `<i class="ri-menu-line"></i>`;
 });
 
 navLinks.forEach(link => {
@@ -33,8 +24,9 @@ navLinks.forEach(link => {
     isNavbarOpen = false;
     menuBar.innerHTML = `<i class="ri-menu-line"></i>`;
     navbar.classList.remove('show');
-  })
-})
+    navbarColor.classList.remove('toggle');
+  });
+});
 
 
 
