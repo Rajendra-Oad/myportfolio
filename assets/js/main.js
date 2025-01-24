@@ -56,7 +56,7 @@ if (darkMode === 'active') enableDarkMode()
 
 //Shery Js and ThreeJs
 
-Shery.mouseFollower();
+//Shery.mouseFollower();
 Shery.makeMagnet('.magnet');
 
 Shery.textAnimate(".text-animate", {
@@ -89,15 +89,14 @@ Shery.hoverWithMediaCircle(".hover_effect", {
   videos: ["./assets/img/video_1.mp4", "./assets/img/video_2.mp4", "./assets/img/video_3.mp4"],
 });
 
-// function isLaptop() {
-//   const isLaptopScreen = window.matchMedia("(min-width: 1024px)").matches;
-//   if(isLaptopScreen){
-//     executeLaptopFunction();
-//   }else{
-//     console.log("Not Laptop");
-//   }
-// }
+function isLaptop() {
+  const isLaptopScreen = window.matchMedia("(min-width: 1024px)").matches;
+  if(isLaptopScreen){
+     executeLaptopFunction();
+   }else{
+     console.log("Not Laptop");
+   } }
 
-// function executeLaptopFunction(){
-//   Shery.mouseFollower();
-// }
+ function executeLaptopFunction(){
+   Shery.mouseFollower();
+ }
