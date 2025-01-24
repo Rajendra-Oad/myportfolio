@@ -154,11 +154,6 @@ body {
   background: var(--white-color);
   transition: all 0.3s;
 }
-body.no-scroll {
-  position: fixed;
-  width: 100%;
-  overflow-y: hidden;
-}
 
 a {
   text-decoration: none;
