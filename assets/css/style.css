@@ -68,7 +68,7 @@ h2 {
   padding: 2rem 0;
 }
 
-h2>span{
+h2>span {
   color: var(--light-soft-purple);
 }
 
@@ -140,12 +140,24 @@ h2>span{
   box-sizing: border-box;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--poppins-font);
   font-size: var(--normal-font-size);
   color: var(--secondary-color);
   background: var(--white-color);
   transition: all 0.3s;
+}
+body.no-scroll {
+  position: fixed;
+  width: 100%;
+  overflow-y: hidden;
 }
 
 a {
@@ -170,6 +182,11 @@ a {
   margin: 0 20px;
   justify-content: center;
   align-items: center;
+}
+
+.header button {
+  color: var(--secondary-color);
+  border: none;
 }
 
 .header nav .nav_container {
@@ -217,7 +234,7 @@ a {
   color: var(--secondary-color);
   border-radius: 50px;
   padding: .4rem .7rem;
-  transition: all ease 0.15s;
+  transition: all 0.15s step-start;
 }
 
 .header nav .nav_menu .nav_list li:hover a {
@@ -233,14 +250,20 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
+  width: 40px;
   padding: 0;
-  height: 38px;
+  font-size: 1.2rem;
+  height: 40px;
 }
+/* .header nav .nav_container .nav_menu_right .dark_toggle_icon:hover,
+.header nav .nav_container .nav_menu_right .dark_toggle_icon:active {
+  background: var(--light-gray-shade-color);
+} */
 
 .header nav .nav_container .nav_menu_right .dark_toggle_icon i {
   fill: var(--white-color);
 }
+
 
 .dark_toggle_icon i:last-child {
   display: none;
@@ -265,9 +288,60 @@ a {
   background: var(--light-soft-purple);
 }
 
+.header nav .nav_container .nav_menu_right .nav_menu_sm {
+  background: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  padding: .1rem;
+  border-radius: 50%;
+}
+/* .header nav .nav_container .nav_menu_right .nav_menu_sm:hover,
+.header nav .nav_container .nav_menu_right .nav_menu_sm:active {
+  background: var(--light-gray-shade-color);
+
+} */
+
+
 .active {
   background: var(--light-soft-purple);
   color: var(--white-color) !important;
+}
+
+
+@media (max-width:992px) {
+  .header nav .nav_menu.show {
+    left: 0%;
+  }
+
+  .header nav .nav_container.toggle {
+    transition: all .50s ease;
+    background: var(--light-soft-purple);
+    
+  }
+  .header nav .nav_menu {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-soft-purple);
+    transition: all .50s ease;
+    font-size: 4vh;
+    text-align: center;
+  }
+  .header nav .nav_menu .nav_list {
+    display: block;
+    margin: 12px 0 !important;
+    padding: 0 25px !important;
+    transition: all .50s ease;
+  }
 }
 
 
@@ -347,7 +421,7 @@ a {
 #banner .banner_img img.profile_pic {
   position: relative;
   z-index: 2;
-  filter: grayscale(95%) brightness(110%) blur(0px) drop-shadow(5px 0px #F5F5F5);
+  filter: grayscale(95%) brightness(125%) drop-shadow(5px 0px #F5F5F5);
 }
 
 #banner .banner_img .profile_container {
@@ -486,6 +560,15 @@ a {
   }
 }
 
+/* About Me section style */
+#about_me {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /* Services section style */
 
 #services {
@@ -511,7 +594,12 @@ a {
   max-width: 400px;
   overflow: hidden;
   width: 100%;
-  height: 280px;
+  height: 285px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   backdrop-filter: blur(10px);
   background: var(--header-bg);
   border-radius: 20px;
@@ -521,7 +609,8 @@ a {
   box-shadow: 0 0 100px 10px var(--light-gray-shade-color);
 }
 
-#services .services_cards:nth-child(even){
+
+#services .services_cards:nth-child(even) {
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -650,12 +739,22 @@ a {
 
 /* projects section */
 
-#projects{
+#projects {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
+
+#projects button {
+  background: var(--light-soft-purple);
+  padding: .4rem .9rem;
+  border-radius: 50px;
+  border: none;
+  color: var(--white-color);
+}
+
 
 /***** Start Footer *****/
 
