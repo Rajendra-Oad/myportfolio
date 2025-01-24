@@ -34,36 +34,36 @@
         </div>
 
 
-        <div class="nav_menu nav_menu_center d-none d-md-block justify-content-md-start" id="nav_menu">
+        <div class="nav_menu nav_menu_center d-lg-block justify-content-lg-start" id="nav_menu">
           <ul class="nav_list" id="nav_list">
             <li>
-              <a href="#home" class="nav_link active"><span><i class="ri-home-fill d-none"></i>Home</span></a>
+              <a href="#home" class="nav_link active"><span>Home</span></a>
             </li>
             <li>
-              <a href="#projects" class="nav_link"><span><i class="ri-projector-fill d-none"></i>About Me</span></a>
+              <a href="#about_me" class="nav_link"><span>About Me</span></a>
             </li>
             <li>
-              <a href="#services" class="nav_link"><span><i class="ri-info-card-fill d-none"></i>Services</span></a>
+              <a href="#services" class="nav_link"><span>Services</span></a>
             </li>
             <li>
-              <a href="#about" class="nav_link"><span><i class="ri-info-card-fill d-none"></i>Projects</span></a>
+              <a href="#projects" class="nav_link"><span>Projects</span></a>
             </li>
             <li>
-              <a href="#hobbies" class="nav_link"><span><i class="ri-focus-fill d-none"></i>Testimonial</span></a>
+              <a href="#testimonails" class="nav_link"><span>Testimonial</span></a>
             </li>
 
           </ul>
         </div>
 
         <div class="nav_menu_right flex-row align-items-center justify-content-end d-flex">
-          <div class="dark_toggle_icon me-md-1" id="theme_switch">
+          <button class="dark_toggle_icon me-md-1" id="theme_switch">
             <i class="ri-moon-fill"></i>
             <i class="ri-sun-fill"></i>
-          </div>
-          <div class="nav_menu_sm d-flex d-md-none ms-3 magnet">
-            <i class="ri-menu-line fs-3"></i>
-          </div>
-          <a href="#hireme" class="nav_links d-flex align-items-center justify-content-center d-none d-md-flex magnet">
+          </button>
+          <button class="nav_menu_sm d-flex d-lg-none ms-3 magnet" id="menu">
+            <i class="ri-menu-line fs-3" ></i>
+          </button>
+          <a href="#hireme" class="nav_links d-flex align-items-center justify-content-center d-none d-lg-flex magnet">
             <span class="faq">Let's Talk</span>
           </a>
         </div>
@@ -86,7 +86,8 @@
           <h1>based in INDIA.</h1>
           <span
             style="letter-spacing: 0.8px;text-align: justify; font-family: var(--poppins-font);text-transform: capitalize;font-weight: bold;word-wrap: break-word;"
-            class="pe-5 fw-normal">A computer science engineering student at NIT,<br class="d-none d-lg-block"> Narasraopeta.
+            class="pe-5 fw-normal">A computer science engineering student at NIT,<br class="d-none d-lg-block">
+            Narasraopeta.
             Passionate about web development.</span>
           <div class="content_btn mt-xl-5 mt-3">
             <a href="mailto:dakarmirajendra@gmail.com" class="btn btn_envelope magnet">
@@ -138,11 +139,17 @@
       </div>
     </section>
 
+    <section id="about_me">
+      <div class="about_me_container">
+
+      </div>
+    </section>
+
     <section id="services" class="container py-5">
       <div class="services_container">
         <div class="services_content_top d-flex align-items-center justify-content-md-between flex-column flex-md-row">
           <div class="services_content_left text-md-start text-center">
-            <span class="title d-inline-block">My Favorite Tools</span>
+            <span class="title d-inline-block">My Specialization</span>
             <h2><span>Services</span> ~ Provide</h2>
           </div>
           <div class="services_content_right align-self-md-center magnet">
@@ -151,19 +158,19 @@
         </div>
         <div
           class="services_content_bottom services_cards_container d-flex align-items-center justify-content-center justify-content-xxl-between justify-content-md-evenly pt-3 row">
-          <div class="services_cards col-12 col-md-4 p-4">
-            <div class="card_icon mb-3"><i class="ri-paint-fill fs-2"></i></div>
+          <div class="services_cards col-12 col-md-4 p-4 hover_effect">
+            <div class="card_icon mb-3 pt-2"><i class="ri-paint-fill fs-2"></i></div>
             <div class="card_header">
               <h4 class="fw-bold">UI & UX Design</h4>
             </div>
             <div class="card_content">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vero id doloremque, eum ipsum ut labore
                 omnis vel quia et?</p>
-              <p>Learn more <i class="ri-arrow-right-long-line ms-2" style="color: var(--light-soft-purple);"></i></p>
+              <p class="m-0">Learn more <i class="ri-arrow-right-long-line ms-2" style="color: var(--light-soft-purple);"></i></p>
             </div>
           </div>
-          <div class="services_cards col-12 col-md-4 p-4">
-            <div class="card_icon mb-3"><i class="ri-apps-fill fs-2"></i></div>
+          <div class="services_cards col-12 col-md-4 p-4 hover_effect">
+            <div class="card_icon mb-3 pt-2"><i class="ri-apps-fill fs-2"></i></div>
             <div class="card_header">
               <h4 class="fw-bold">Application Design</h4>
             </div>
@@ -173,8 +180,8 @@
               <p>Learn more <i class="ri-arrow-right-long-line ms-2" style="color: var(--light-soft-purple);"></i></p>
             </div>
           </div>
-          <div class="services_cards col-12 col-md-4 p-4">
-            <div class="card_icon mb-3"><i class="ri-news-fill fs-2"></i></div>
+          <div class="services_cards col-12 col-md-4 p-4 hover_effect">
+            <div class="card_icon mb-3 pt-2"><i class="ri-news-fill fs-2"></i></div>
             <div class="card_header">
               <h4 class="fw-bold">Website Design</h4>
             </div>
@@ -188,6 +195,7 @@
         </div>
       </div>
     </section>
+
     <hr style="width: 85%;transform: translateX(10%);">
 
     <section id="tools" class="container text-center py-5">
@@ -198,41 +206,41 @@
         <div class="tools_row row mx-auto pt-3 justify-content-center">
           <div class="tools_col col-6 col-md-4 col-xl-2 col-lg-3">
             <div class="tools_info figma">
-              <span>Figma</span>
+              <span class="text-animate">Figma</span>
               <span class="top_per">10%</span>
             </div>
             <div class="tools_info after_effect">
-              <span>After Effects</span>
+              <span class="text-animate">After Effects</span>
               <span class="top_per">2%</span>
             </div>
           </div>
           <div class="tools_col col-6 col-md-4 col-xl-2 col-lg-3">
             <div class="tools_info behance">
-              <span>Behance</span>
+              <span class="text-animate">Behance</span>
               <span class="top_per">90%</span>
             </div>
             <div class="tools_info remix">
-              <span>Remix Icon</span>
+              <span class="text-animate">Remix Icon</span>
               <span class="top_per">98%</span>
             </div>
           </div>
           <div class="tools_col col-6 col-md-4 col-xl-2 col-lg-3">
             <div class="tools_info sketch">
-              <span>Sketch</span>
+              <span class="text-animate">Sketch</span>
               <span class="top_per">20%</span>
             </div>
             <div class="tools_info storybook">
-              <span>Storybook</span>
+              <span class="text-animate">Storybook</span>
               <span class="top_per">50%</span>
             </div>
           </div>
           <div class="tools_col col-6 col-md-4 col-xl-2 col-lg-3">
             <div class="tools_info photoshop">
-              <span>PhotoShop</span>
+              <span class="text-animate">PhotoShop</span>
               <span class="top_per">30%</span>
             </div>
             <div class="tools_info invision">
-              <span>InVision</span>
+              <span class="text-animate">InVision</span>
               <span class="top_per">21%</span>
             </div>
           </div>
@@ -242,9 +250,23 @@
       </div>
 
     </section>
-    <section id="projects">
-      <div class="projects_container">
 
+    <section id="projects" class="container py-5">
+      <div class="projects_container">
+        <div class="projects_content_top d-flex align-items-center justify-content-md-between flex-column flex-md-row">
+          <div class="projects_content_left text-md-start text-center">
+            <span class="title d-inline-block">My Portfolio</span>
+            <h2>Let's have look <br> at <span>My Projects</span></h2>
+          </div>
+          <div class="projects_content_right align-self-md-center magnet">
+            <button>View All</button>
+          </div>
+        </div>
+        <div class="projects_content_bottom">
+          <div class="projects_card">
+            
+          </div>
+        </div>
       </div>
     </section>
 
@@ -314,6 +336,8 @@
     </footer>
   </main>
 
+  <!-- ControlKit is needed for Debug Panel -->
+  <!-- <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script> -->
 
   <!--  Gsap is needed for Basic Effects -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -325,12 +349,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
 
   <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"
-    integrity="sha512-vnmn/Qqn6aG0POAc9mIGzjq0IybrvxJXYDafNvp9JSnDGxeF3pbkSqLvf+YGd5ku63pT7sa/jxHn7/d0mU8+tA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Three.js is needed for 3d Effects -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
 
-  <!-- ControlKit is needed for Debug Panel -->
-  <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
 
   <!-- locomotive-scroll animation script link -->
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
