@@ -1,7 +1,42 @@
-const scroll = new LocomotiveScroll({
- el: document.querySelector('#main'),
-  smooth:true
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector('#main'),
+//   smooth:true
+// });
+
+
+//navbar menu toggle
+let menuBar = document.getElementById('menu');
+let navbar = document.querySelector('.header nav .nav_menu');
+let navbarColor =  document.querySelector('.header nav .nav_container');
+let navLinks = document.querySelectorAll('.nav_link');
+const body = document.body;
+let isNavbarOpen = false;
+
+
+menuBar.addEventListener('click', () => {
+  isNavbarOpen = !isNavbarOpen;
+  navbar.classList.toggle('show');
+  navbarColor.classList.toggle('toggle'); 
+
+  if(isNavbarOpen){
+    body.classList.add('no_scroll');
+    menuBar.innerHTML = `<i class="ri-close-line"></i>`
+  }else{
+
+  body.classList.remove('no_scroll')
+  menuBar.innerHTML = `<i class="ri-menu-line"></i>`;
+  }
 });
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    isNavbarOpen = false;
+    menuBar.innerHTML = `<i class="ri-menu-line"></i>`;
+    navbar.classList.remove('show');
+  })
+})
+
+
 
 
 // toggle dark mode
@@ -27,28 +62,50 @@ const disableDarkMode = () => {
 if (darkMode === 'active') enableDarkMode()
 
 
-// Function to detect if the device is a laptop
-function isLaptop() {
-    // Check screen width for laptop range
-    const isLaptopScreen = window.matchMedia("(min-width: 1024px) and (max-width: 1440px)").matches;
+//Shery Js and ThreeJs
 
-    if (isLaptopScreen) {
-        console.log("This is a laptop.");
-        // Call the laptop-specific function
-        executeLaptopFunction();
-    } else {
-        console.log("This is not a laptop.");
-    }
-}
-
-// Laptop-specific functionality
-function executeLaptopFunction() {
-    Shery.mouseFollower();
-}
-
-// Event listener for page load and window resize
-window.onload = isLaptop; // Check on page load
-window.onresize = isLaptop; // Check on window resize
-
-
+/*Shery.mouseFollower();
 Shery.makeMagnet('.magnet');
+
+Shery.textAnimate(".text-animate", {
+  style: 1,
+  debug: true,
+  y: 10,
+  delay: 0.1,
+  duration: 2,
+  ease: "cubic-bezier(0.23,1,0.320,1)",
+  multiplier: 0.1,
+});
+
+Shery.imageMasker(".mask_image", {
+  mouseFollower: true,
+  text: "Rajendra Oad",
+  ease: "cubic-bezier(0.23,1,0.320,1)",
+  duration: 1,
+})
+
+Shery.imageEffect(".imgEff", {
+  style: 1,
+  debug: true,
+  config: {
+
+  },
+  preset: "./presets/wigglewobble.json",
+});
+
+Shery.hoverWithMediaCircle(".hover_effect", {
+  videos: ["./assets/img/video_1.mp4", "./assets/img/video_2.mp4", "./assets/img/video_3.mp4"],
+});*/
+
+// function isLaptop() {
+//   const isLaptopScreen = window.matchMedia("(min-width: 1024px)").matches;
+//   if(isLaptopScreen){
+//     executeLaptopFunction();
+//   }else{
+//     console.log("Not Laptop");
+//   }
+// }
+
+// function executeLaptopFunction(){
+//   Shery.mouseFollower();
+// }
