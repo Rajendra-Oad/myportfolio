@@ -1,20 +1,9 @@
-/***** Added Custom Font *****/
-@font-face {
-  font-family: 'CustomFont';
-  src: url(../fonts/TS\ Block\ Bold.ttf) format(truetype);
-}
 
 @font-face {
   font-family: 'poppins';
   src: url(../fonts/Poppins-Regular.ttf) format(truetype);
   font-weight: normal;
   font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'lexendDeca';
-  src: url('../fonts/LexendDeca-VariableFont_wght.ttf') format(truetype);
 }
 
 /***** CSS Variable *****/
