@@ -1,7 +1,7 @@
-// const scroll = new LocomotiveScroll({
-//   el: document.querySelector('#main'),
-//   smooth:true
-// });
+ const scroll = new LocomotiveScroll({
+   el: document.querySelector('#main'),
+   smooth:true
+ });
 
 
 //navbar menu toggle
@@ -64,7 +64,7 @@ if (darkMode === 'active') enableDarkMode()
 
 //Shery Js and ThreeJs
 
-/*Shery.mouseFollower();
+Shery.mouseFollower();
 Shery.makeMagnet('.magnet');
 
 Shery.textAnimate(".text-animate", {
@@ -95,7 +95,7 @@ Shery.imageEffect(".imgEff", {
 
 Shery.hoverWithMediaCircle(".hover_effect", {
   videos: ["./assets/img/video_1.mp4", "./assets/img/video_2.mp4", "./assets/img/video_3.mp4"],
-});*/
+});
 
 // function isLaptop() {
 //   const isLaptopScreen = window.matchMedia("(min-width: 1024px)").matches;
